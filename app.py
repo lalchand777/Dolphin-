@@ -111,7 +111,7 @@ if prompt := st.chat_input("Gemini se puchiye..."):
         
         try:
             stream = client.chat.completions.create(
-                model="nousresearch/hermes-3-llama-3.1-70b:free", 
+                model="google/gemini-2.0-flash-exp:free", 
                 messages=st.session_state.messages,
                 stream=True,
                 temperature=0.7, 
