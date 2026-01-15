@@ -111,7 +111,7 @@ if prompt := st.chat_input("Gemini se puchiye..."):
         
         try:
             stream = client.chat.completions.create(
-                model="microsoft/phi-3-medium-128k-instruct:free", 
+                model="microsoft/phi-3-medium-128k-instruct", 
                 messages=st.session_state.messages,
                 stream=True,
                 temperature=0.7, 
