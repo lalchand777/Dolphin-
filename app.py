@@ -71,7 +71,7 @@ if prompt := st.chat_input("Pucho bhai, ab sahi jawab milega..."):
         try:
             stream = client.chat.completions.create(
                 # 👇 YAHAN HAI MAGIC CHANGE (Sabse bada model)
-                model="nousresearch/hermes-3-llama-3.1-405b:free", 
+                model="nousresearch/hermes-3-llama-3.1-405b", 
                 messages=st.session_state.messages,
                 stream=True,
                 temperature=0.7, # Smartness balance
