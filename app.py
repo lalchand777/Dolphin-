@@ -80,7 +80,7 @@ if prompt := st.chat_input("Puchiye, main seedha jawab dunga..."):
         
         try:
             stream = client.chat.completions.create(
-                model="cognitivecomputations/dolphin-llama-3-8b",
+                model="gryphe/mythomax-l2-13b",
                 messages=st.session_state.messages,
                 stream=True,
             )
